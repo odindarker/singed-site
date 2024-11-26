@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singed Gameplay Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #001a00, #004d00); /* Green gradient */
+            color: #e0e0e0;
+        }
+        header {
+            background: #004400; /* Dark green */
+            padding: 20px;
+            text-align: center;
+            color: #aaffaa; /* Light green */
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+        .smokecloud {
+            background: radial-gradient(circle, rgba(0,128,0,0.8) 30%, rgba(75,0,130,0.5) 70%);
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            animation: float 5s infinite alternate ease-in-out;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+        .smokecloud:nth-child(1) {
+            top: 50px;
+            left: 30px;
+        }
+        .smokecloud:nth-child(2) {
+            top: 120px;
+            left: 200px;
+            animation-delay: 2s;
+        }
+        .smokecloud:nth-child(3) {
+            top: 200px;
+            left: 80px;
+            animation-delay: 1s;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #99ff99;
+        }
+        .content p {
+            color: #ccccff; /* Light purple */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #003300; /* Darker green */
+            color: #80ff80;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="smokecloud"></div>
+    <div class="smokecloud"></div>
+    <div class="smokecloud"></div>
+    <header>
+        <h1>Singed Gameplay Blog</h1>
+        <p>Welcome to the chaos of poison trails and tower dives!</p>
+    </header>
+    <div class="content">
+        <h2>Latest Blog Post</h2>
+        <p>
+            Singed is one of the most unique champions in League of Legends. 
+            Known for his "Don't chase Singed" strategy, he excels at disrupting enemies while spreading chaos.
+        </p>
+        <h2>Top Tips for Playing Singed</h2>
+        <ul>
+            <li>Always look for opportunities to proxy farm early.</li>
+            <li>Use your poison trail to zone out enemies effectively.</li>
+            <li>Master the art of flipping enemies into your team!</li>
+        </ul>
+    </div>
+    <footer>
+        © 2024 Singed Gameplay Blog | Poison Never Ends
+    </footer>
+</body>
+</html>
